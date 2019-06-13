@@ -17,6 +17,11 @@ def binary_search_iterative(arr, target):
     high = len(arr) - 1
     mid = (low + high) // 2
 
+    if target > arr[-1]: 
+        return False
+    if target < arr[0]:
+        return False
+
     while len(arr) >= 1:
         if arr[mid] == target:
             return mid
@@ -26,10 +31,8 @@ def binary_search_iterative(arr, target):
         elif target > arr[mid]:
             low = mid
             mid = (low + high) // 2
-    else:
-        return false
 
 print(binary_search_iterative.__doc__)
 print(binary_search_iterative([1,2,3,4,5,6,7,8,9], 5))
 print(binary_search_iterative([1,2,3,4,5,6,7,8,9], 2))
-print(binary_search_iterative([1,2,3,4,5,6,7,8,9], 8))
+print(binary_search_iterative([1,2,3,4,5,6,7,8,9], 12))
