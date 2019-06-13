@@ -15,7 +15,7 @@ def binary_search_iterative(arr, target):
    
     low = 0
     high = len(arr) - 1
-    mid = (low + high) // 2
+    mid = (high - low) // 2
 
     if target > arr[-1]: 
         return False
