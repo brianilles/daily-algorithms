@@ -5,8 +5,8 @@ def binary_search_iterative(arr, target):
     2. if true, found
     3. if false, not found
     4. check if greater than or less than
-    4. if less than, remove right hand side and repeat from 1
-    5. if greater than, remove left hand side and repeat
+    5. if less than, remove right hand side and repeat from 1
+    6. if greater than, remove left hand side and repeat
 
     Input: a list if numbers (arr), a target
     Output: an item's index if found, false if not found
