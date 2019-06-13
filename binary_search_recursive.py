@@ -6,20 +6,22 @@ def binary_search_recursive(arr, target):
     Runtime Complexity: O(log(n))
     """
     low = 0
-    high = len(arr) - 1
+    high = (len(arr) - 1)
     midpoint = (high + low) // 2
+
+    if target > arr[-1]: 
+        return False
+    if target < arr[0]:
+        return False
 
     if target == arr[midpoint]:
         return midpoint
-    elif target > arr[midpoint]:
-        return binary_search_recursive(arr[midpoint:], target)
     elif target < arr[midpoint]:
         return binary_search_recursive(arr[:midpoint], target)
-    else:
-        return false
-
+    elif target > arr[midpoint]:
+        return binary_search_recursive(arr[midpoint:], target)
 
 print(binary_search_recursive.__doc__)
 print(binary_search_recursive([1,2,3,4,5,6,7,8,9], 5))
-print(binary_search_recursive([1,2,3,4,5,6,7,8,9], 2))
-print(binary_search_recursive([1,2,3,4,5,6,7,8,9], 10))
+print(binary_search_recursive([1,2,3,4,5,6,7,8,9], 6))
+print(binary_search_recursive([1,2,3,4,5,6,7,8,9], -10))

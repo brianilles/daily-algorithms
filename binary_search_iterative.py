@@ -34,5 +34,5 @@ def binary_search_iterative(arr, target):
 
 print(binary_search_iterative.__doc__)
 print(binary_search_iterative([1,2,3,4,5,6,7,8,9], 5))
-print(binary_search_iterative([1,2,3,4,5,6,7,8,9], 2))
+print(binary_search_iterative([1,2,3,4,5,6,7,8,9], 6))
 print(binary_search_iterative([1,2,3,4,5,6,7,8,9], 12))
