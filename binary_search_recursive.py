@@ -31,4 +31,4 @@ print(binary_search_recursive.__doc__)
 arr1 = [1,2,3,4,5,6,7,8,9,10]
 print(binary_search_recursive(arr1, 4, 0, len(arr1) - 1))
 print(binary_search_recursive(arr1, 9, 0, len(arr1) - 1))
-print(binary_search_recursive(arr1, 12, 0, len(arr1) - 1))
+print(binary_search_recursive(arr1, -12, 0, len(arr1) - 1))
