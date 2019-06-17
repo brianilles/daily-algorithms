@@ -1,8 +1,9 @@
 def bubble_sort(arr):
     """
+    Not ideal for real-world applications
     Input: an array (here in Python, a list)
     Output: the array sorted
-    Runtime Complexity: 
+    Runtime Complexity: O^2
     """
     for i in range(0, len(arr) - 1):
         swapped = False
