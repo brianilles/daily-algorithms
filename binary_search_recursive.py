@@ -1,6 +1,7 @@
 def binary_search_recursive(arr, target, low, high):
     """
-    A recursive implementaion of binary search. Precondition: array must be sorted. Finding if a item exists in a list
+    A recursive implementaion of binary search. Precondition: array must be sorted.
+
     Input: Array, target value
     Output: Value's index or false
     Runtime Complexity: O(log(n))

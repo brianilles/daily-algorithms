@@ -1,6 +1,6 @@
 def selection_sort(arr):
     """
-    An inefficent algorithm for many real-word data sets. 
+    A sorting algorithm.
     Input: array
     Output: sorted arr
     Runtime: O(n^2)

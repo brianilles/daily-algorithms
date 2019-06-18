@@ -1,6 +1,7 @@
 def bubble_sort(arr):
     """
-    Not ideal for real-world applications
+    A sorting algorithm.
+    
     Input: an array (here in Python, a list)
     Output: the array sorted
     Runtime Complexity: O^2

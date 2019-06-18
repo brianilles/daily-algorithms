@@ -1,6 +1,7 @@
 def binary_search_iterative(arr, target):
     """
     An algorithm for finding an item in a sorted list.
+
     1. compare the item in the middle of the list to the target
     2. if true, found
     3. if false, not found
